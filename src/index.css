@@ -10,7 +10,72 @@
 .main-text {
   @apply sm:text-2xl font-thin pl-10 pr-10 pt-3 text-center text-sm font-sans text-black;
 }
+.main-nav{
+  display: flex;
+  flex-direction: row;
+  gap: .2rem;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes slideOpen {
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+@keyframes slideClose {
+  0%{
+    width: 100vw;
+    opacity: 1;
+  }
+  100%{
+    width: 0vw;
+    opacity: 0;
+  }
+}
+.navMenu-open{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(73, 73, 73, 0.582);
+  top: 6.3rem;
+  right: 0rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideOpen;
+  animation-duration: .2s;
+  transform-origin: right;
+  animation-timing-function: ease-out;
+}
 
+.navMenu-closed {
+  height: 100vh;
+  width: 0vw;
+  background-color: rgba(73, 73, 73, 0.582);
+  right: 0rem;
+  opacity: 0;
+  display: flex ;
+  transform-origin: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6.3rem;
+  animation: slideClose;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+}
+
+
+@media (max-width: 768px) {
+  .main-nav{
+    display: none;
+  }
+}
 #root{
   background: #fff;
   font-family: 'Raleway', sans-serif;
