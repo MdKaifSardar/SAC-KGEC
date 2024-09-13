@@ -1,66 +1,27 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
-const Navbar = ({
-  featuresRef,
-  aboutRef,
-  portfolioRef,
-  teamRef,
-  testimonialRef,
-  contactRef,
-  footerRef,
-}) => {
-  const scrollToSection = (elementRef) => {
-    if (elementRef.current) {
-      elementRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+const Navbar = ({ sections, activeSection, onNavClick }) => {
   return (
-    <section className="flex flex-row w-full bg-yellow-500">
-      <nav className="flex flex-row bg-green-800 justify-between items-center w-full">
+    <section className="fixed top-0 p-1 z-10 bg-white pl-10 pr-10 flex flex-row w-full">
+      <nav className="flex flex-row justify-between items-center w-full h-30">
         <div className="w-30 h-30">
           <img className="w-fit h-fit" src={logo} alt="SAC-KGEC Logo" />
         </div>
-        <div className="flex flex-row justify-center items-center bg-red-400">
-          <button className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white">
-            Home
-          </button>
-          <button
-            onClick={() => scrollToSection(featuresRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            Features
-          </button>
-          <button
-            onClick={() => scrollToSection(aboutRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            About
-          </button>
-          <button
-            onClick={() => scrollToSection(portfolioRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            Portfolio
-          </button>
-          <button
-            onClick={() => scrollToSection(teamRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            Team
-          </button>
-          <button
-            onClick={() => scrollToSection(testimonialRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            Testimonial
-          </button>
-          <button
-            onClick={() => scrollToSection(contactRef)}
-            className="h-fit w-fit text-center p-1 text-black hover:bg-red-500 hover:text-white"
-          >
-            Contact
-          </button>
+        <div className="flex flex-row gap-3 h-full justify-center items-center">
+          {sections.map((section, index) => (
+            <button
+              key={index}
+              className={`h-full md:text-2xl text-lg py-2 px-4 rounded-2xl text-black ${
+                activeSection === section.id
+                  ? "bg-red-500 text-white"
+                  : "text-black"
+              }`}
+              onClick={() => onNavClick(section.ref)}
+            >
+              {section.label}
+            </button>
+          ))}
         </div>
       </nav>
     </section>

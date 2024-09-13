@@ -1,8 +1,8 @@
 import React, { forwardRef } from "react";
 
-const Footer = forwardRef((props, ref) => {
+const Footer = () => {
   return (
-    <footer ref={ref} id="footer">
+    <footer id="footer">
       <div className="container">
         <div className="row">
           <div className="col-sm-6">
@@ -54,6 +54,6 @@ const Footer = forwardRef((props, ref) => {
       </div>
     </footer>
   );
-});
+};
 
 export default Footer;
