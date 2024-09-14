@@ -8,7 +8,7 @@ const HeroBanner = forwardRef((props, ref) => {
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
-                <h2>Best Flat Responsive html</h2>
+                <h2>Studens' Automobile Club KGEC</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
