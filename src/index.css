@@ -10,6 +10,11 @@
 .main-text {
   @apply sm:text-2xl font-thin pl-10 pr-10 pt-3 text-center text-sm font-sans text-black;
 }
+
+body::-webkit-scrollbar{
+ display: none;
+}
+
 .main-nav{
   display: flex;
   flex-direction: row;

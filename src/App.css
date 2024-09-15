@@ -1,22 +1,56 @@
 .portfolio-enter {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .portfolio-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-  }
-  
-  .portfolio-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .portfolio-exit-active {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-  }
-  
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.portfolio-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.portfolio-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.sponsers {
+  /* margin-top: 60px; */
+  width: auto;
+  /* height: 30vh; */
+  /* display: flex;
+  justify-content: center; 
+  align-items: center; */
+  text-align: center;
+}
+.sponsership-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsers h1{
+  font-size:initial;
+  color: rgb(220 38 38);
+}
+.qr-image-conatiner{
+  /* width: 60vw; */
+  max-width: 300px;
+  min-width: 200px;
+  width: 20%;
+  height: auto;
+}
+.qr-img{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sponsership-about{
+    flex-direction: column;
+  } 
+}
