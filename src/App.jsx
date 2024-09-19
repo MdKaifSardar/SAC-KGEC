@@ -11,6 +11,8 @@ import Testimonial from "./Components/Testimonials";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { useEffect, useRef, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Sponsers from "./Components/Sponsers";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -56,31 +58,70 @@ function App() {
   };
   return (
     <>
-      <Navbar
-        sections={[
-          { id: "home", ref: sections.home, label: "Home" },
-          { id: "features", ref: sections.features, label: "Features" },
-          { id: "about", ref: sections.about, label: "About" },
-          { id: "portfolio", ref: sections.portfolio, label: "Portfolio" },
-          { id: "team", ref: sections.team, label: "Team" },
-          {
-            id: "testimonial",
-            ref: sections.testimonial,
-            label: "Testimonial",
-          },
-          { id: "contact", ref: sections.contact, label: "Contact" },
-        ]}
-        activeSection={activeSection}
-        onNavClick={scrollToSection}
-      />
-      <HeroBanner ref={sections.home}/>
-      <Features ref={sections.features} />
-      <AboutSection ref={sections.about} />
-      <PortfolioSection ref={sections.portfolio} />
-      <Team ref={sections.team} />
-      <Testimonial ref={sections.testimonial} />
-      <Contact ref={sections.contact} />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar
+                sections={[
+                  { id: "home", ref: sections.home, label: "Home" },
+                  { id: "features", ref: sections.features, label: "Features" },
+                  { id: "about", ref: sections.about, label: "About" },
+                  {
+                    id: "portfolio",
+                    ref: sections.portfolio,
+                    label: "Portfolio",
+                  },
+                  { id: "team", ref: sections.team, label: "Team" },
+                  {
+                    id: "testimonial",
+                    ref: sections.testimonial,
+                    label: "Testimonial",
+                  },
+                  { id: "contact", ref: sections.contact, label: "Contact" },
+                ]}
+                activeSection={activeSection}
+                onNavClick={scrollToSection}
+              />
+              <HeroBanner ref={sections.home} />
+              <Features ref={sections.features} />
+              <AboutSection ref={sections.about} />
+              <PortfolioSection ref={sections.portfolio} />
+              <Team ref={sections.team} />
+              <Sponsers/>
+              <Testimonial ref={sections.testimonial} />
+              <Contact ref={sections.contact} />
+              <Footer />
+            </>
+          }
+        />
+        {/* <Route path="/sponsers" element={<>
+          <Navbar
+                sections={[
+                  { id: "home", ref: sections.home, label: "Home" },
+                  { id: "features", ref: sections.features, label: "Features" },
+                  { id: "about", ref: sections.about, label: "About" },
+                  {
+                    id: "portfolio",
+                    ref: sections.portfolio,
+                    label: "Portfolio",
+                  },
+                  { id: "team", ref: sections.team, label: "Team" },
+                  {
+                    id: "testimonial",
+                    ref: sections.testimonial,
+                    label: "Testimonial",
+                  },
+                  { id: "contact", ref: sections.contact, label: "Contact" },
+                ]}
+                activeSection={activeSection}
+                onNavClick={scrollToSection}
+              />
+          
+          <Footer />
+        </>}/> */}
+      </Routes>
     </>
   );
 }
