@@ -20,7 +20,7 @@
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
-.sponsers {
+.sponsors {
   /* margin-top: 60px; */
   width: auto;
   /* height: 30vh; */
@@ -29,7 +29,7 @@
   align-items: center; */
   text-align: center;
 }
-.sponsership-about {
+.sponsorship-about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +48,13 @@
 .qr-img{
   width: 100%;
 }
+.sponsor-logo li img{
+  height: 100%;
+  max-width: 10rem;
+}
 
 @media (max-width: 768px) {
-  .sponsership-about{
+  .sponsorship-about{
     flex-direction: column;
   } 
 }
