@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import HeroBanner from "./Components/HeroBanner";
+import 'leaflet/dist/leaflet.css';
 // import HeroText from './Components/HeroText'
 import Features from "./Components/Features";
 import AboutSection from "./Components/About";

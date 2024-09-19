@@ -27,7 +27,7 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           ))}
         </div>
       </nav>
-      <div className="z-10 md:hidden flex flex-col justify-center items-center">
+      <div className="z-20 md:hidden flex flex-col justify-center items-center">
         <button
           onClick={() => {
             setIsOpen(!isOpen);
