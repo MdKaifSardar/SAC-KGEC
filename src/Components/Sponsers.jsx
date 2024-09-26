@@ -22,11 +22,11 @@ const Sponsers = () => {
         <div className="pt-10 gap-10 flex sm:flex-row flex-col justify-center sm:items-start items-center w-full h-fit">
           <div className="gap-5 sm:w-[60%] w-[92%] grid sm:grid-cols-2 grid-cols-1 row-auto ">
             {sponsorContent.map((content, index) => (
-              <div className="bg-customColor shadow px-5 py-4 rounded-xl flex flex-col justify-start items-start gap-3">
-                <span className="font-bold text-white sm:text-3xl text-lg">
+              <div key={index} className="bg-customColor shadow px-5 py-4 rounded-xl flex flex-col justify-start items-start gap-3">
+                <span className="font-sans font-bold text-white sm:text-2xl text-xl">
                   {content.title}
                 </span>
-                <span className="sm:text-xl text-white text-md pl-5 ">
+                <span className="font-sans sm:text-xl text-sm text-white pl-5 ">
                   {content.text}
                 </span>
               </div>
@@ -54,7 +54,7 @@ const Sponsers = () => {
             </ul>
           ))}
         </div>
-        <div className="py-20 flex flex-col justify-center items-center w-[30vw]">
+        <div className="py-20 flex flex-col justify-center items-center w-[92vw]">
           <img src={brochure} alt="sac-brochure" />
         </div>
       </div>
