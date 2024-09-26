@@ -2,7 +2,7 @@ import React from "react";
 
 const AddressComponent = () => {
   return (
-    <div className="pt-10 w-full h-fit flex flex-col justify-center items-center">
+    <div className="py-10 w-full h-fit flex flex-col justify-center items-center">
       <h3>Contact Info</h3>
       <address>
         <strong>Amazing Company, Inc.</strong>
