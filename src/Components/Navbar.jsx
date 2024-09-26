@@ -67,9 +67,9 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
             </button>
           ))}
           <button
-            className={`text-white py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
+            className={`py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
           >
-            <Link to="/sponsor">Sponsors</Link>
+            <Link to="/sponsor" className="text-white">Sponsors</Link>
           </button>
         </nav>
       </div>
