@@ -14,9 +14,9 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = () => {
-  const position = [40.7128, -74.006];
+  const position = [22.992593545127082, 88.4487911059281];
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
+    <div style={{ height: "100%", width: "50%" }}>
       <MapContainer
         center={position}
         zoom={13}
@@ -28,7 +28,8 @@ const MapComponent = () => {
         />
         <Marker position={position}>
           <Popup>
-            New York City! <br /> This is where NYC is located.
+            SAC KGEC <br /> This is where Student's Automobile Club of KGEC is
+            located.
           </Popup>
         </Marker>
       </MapContainer>
