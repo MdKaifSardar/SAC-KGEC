@@ -26,7 +26,7 @@ const ContactUsForm = () => {
         className="w-full py-10 flex flex-col justify-center items-center"
         onSubmit={handleSubmit}
       >
-        <div className="w-[80%] p-2">
+        <div className="w-full py-2">
           <input
             type="text"
             name="name"
@@ -37,7 +37,7 @@ const ContactUsForm = () => {
             required
           />
         </div>
-        <div className="w-[80%] p-2">
+        <div className="w-full py-2">
           <input
             type="email"
             name="email"
@@ -48,7 +48,7 @@ const ContactUsForm = () => {
             required
           />
         </div>
-        <div className="w-[80%] p-2">
+        <div className="w-full py-2">
           <input
             type="text"
             name="subject"
@@ -59,7 +59,7 @@ const ContactUsForm = () => {
             required
           />
         </div>
-        <div className="w-[80%] p-2">
+        <div className="w-full py-2">
           <textarea
             name="message"
             className="form-control"
@@ -70,9 +70,11 @@ const ContactUsForm = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Send Message
-        </button>
+        <div className="pt-4">
+          <button type="submit" className=" btn btn-primary">
+            Send Message
+          </button>
+        </div>
       </form>
     </div>
   );

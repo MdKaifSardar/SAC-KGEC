@@ -12,7 +12,7 @@ const SponsorNav = () => {
         <div className="w-28 h-28">
           <img src={Logo} alt="SAC-KGEC logo" className="w-fit h-fit" />
         </div>
-        <div className="text-4xl font-semibold font-sans text-slate-500">SAC KGEC</div>
+        <div className="text-4xl font-semibold font-sans text-black">SAC-KGEC</div>
       </Link>
     </div>
   );

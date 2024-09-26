@@ -2,17 +2,14 @@ import React from "react";
 
 const AddressComponent = () => {
   return (
-    <div className="py-10 w-full h-fit flex flex-col justify-center items-center">
+    <div className="w-full h-fit flex flex-col justify-center items-start">
       <h3>Contact Info</h3>
-      <address>
-        <strong>Amazing Company, Inc.</strong>
-        <br />
-        12345 NewYork, Street 125
-        <br />
-        United States 94107
-        <br />
+      <div className="flex flex-col justify-center items-start">
+        <span>Amazing Company, Inc.</span>
+        <span>12345 NewYork, Street 125</span>
+        <span>United States 94107</span>
         <abbr title="Phone">P:</abbr> (123) 456-7890
-      </address>
+      </div>
     </div>
   );
 };

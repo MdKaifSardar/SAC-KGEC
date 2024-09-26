@@ -11,10 +11,6 @@
   @apply sm:text-2xl font-thin pl-10 pr-10 pt-3 text-center text-sm font-sans text-black;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -886,14 +882,13 @@ ul.nostyle i {
   }
 }
 
-/* Custom Scrollbar for WebKit Browsers (Chrome, Safari, Edge) */
 .scroll-container::-webkit-scrollbar {
   width: 20px; /* Width of the entire scrollbar */
   height: 10px; /* For horizontal scrollbar */
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  background: #fee2e2; /* Background of the scrollbar track */
+  background: rgb(255, 238, 230); /* Background of the scrollbar track */
   border-radius: 5px;
 }
 
@@ -906,3 +901,4 @@ ul.nostyle i {
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: rgb(255, 81, 81); /* Scrollbar color on hover */
 }
+

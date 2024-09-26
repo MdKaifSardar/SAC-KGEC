@@ -9,7 +9,7 @@ const convenors = [
     title: "Convenor",
     imgSrc: convener1,
     description:
-      "Personalized trai access rcises, amin ders malesuada id dolor non, elemen tum auctor arcu.",
+      "Mechanical Engineering Department KGEC 4th year",
     social: {
       facebook: "#",
       twitter: "#",
@@ -22,7 +22,7 @@ const convenors = [
     title: "Convenor",
     imgSrc: convener3,
     description:
-      "Personalized trai access rcises, amin ders malesuada id dolor non, elemen tum auctor arcu.",
+      "Mechanical Engineering Department KGEC 4th year",
     social: {
       facebook: "#",
       twitter: "#",
@@ -35,7 +35,7 @@ const convenors = [
     title: "Convenor",
     imgSrc: convener2,
     description:
-      "Personalized trai access rcises, amin ders malesuada id dolor non, elemen tum auctor arcu.",
+      "Mechanical Engineering Department KGEC 4th year",
     social: {
       facebook: "#",
       twitter: "#",

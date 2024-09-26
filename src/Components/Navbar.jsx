@@ -14,8 +14,8 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           <div className="w-28 h-28">
             <img className="w-fit h-fit" src={logo} alt="SAC-KGEC Logo" />
           </div>
-          <div className="text-slate-500 text-4xl font-sans font-semibold">
-            SAC KGEC
+          <div className="text-black text-4xl font-sans font-semibold">
+            SAC-KGEC
           </div>
         </div>
 

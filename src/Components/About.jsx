@@ -24,7 +24,7 @@ const AboutSection = forwardRef((props, ref) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: false, amount: '50%' }}
-            className="pt-4 sm:text-2xl text-lg font-sans font-thin text-black w-full"
+            className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-full"
           >
             Students’ Automobile Club of Kalyani Government Engineering College
             (SAC-KGEC), is a student-driven initiative aimed at enhancing
@@ -49,7 +49,7 @@ const AboutSection = forwardRef((props, ref) => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: false }}
-              className="w-full flex flex-row justify-start items-start sm:text-3xl text-2xl text-red-600 font-sans font-bold pb-4"
+              className="w-full flex flex-row justify-start items-start sm:text-3xl text-2xl text-customColor font-sans font-bold pb-4"
             >
               Club Activity
             </motion.div>
@@ -58,7 +58,7 @@ const AboutSection = forwardRef((props, ref) => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false }}
-              className="sm:text-2xl text-lg font-sans font-thin text-black"
+              className="sm:text-2xl text-lg font-sans font-semibold text-black"
             >
               We specialize in designing and building go-karts, offering
               students a platform to apply theoretical knowledge in real-world

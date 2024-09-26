@@ -16,7 +16,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 const MapComponent = () => {
   const position = [22.992593545127082, 88.4487911059281];
   return (
-    <div style={{ height: "100%", width: "50%" }}>
+    <div className="sm:w-[50%] w-full sm:h-full h-[50vh]">
       <MapContainer
         center={position}
         zoom={13}

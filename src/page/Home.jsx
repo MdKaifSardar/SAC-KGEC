@@ -9,6 +9,7 @@ import Testimonial from "../Components/Testimonials";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import { useEffect, useRef, useState } from "react";
+import SocialLinks from "../Components/SocialLinks";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -75,6 +76,7 @@ const Home = () => {
         activeSection={activeSection}
         onNavClick={scrollToSection}
       />
+      <SocialLinks/>
       <HeroBanner ref={sections.home} />
       <Features ref={sections.features}/>
       <AboutSection ref={sections.about} />

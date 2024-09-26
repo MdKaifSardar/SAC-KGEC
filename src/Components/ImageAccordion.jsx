@@ -40,7 +40,7 @@ const ImageAccordion = () => {
     <div className="ml-auto mr-auto sm:w-[92%] w-[95%] space-y-4 p-5">
       <div>
         <button
-          className="w-full p-4 sm:text-3xl text-2xl text-left bg-red-500 text-white rounded-lg"
+          className="w-full p-4 sm:text-3xl text-2xl text-left bg-customColor text-white rounded-lg"
           onClick={() => toggleAccordion(1)}
         >
           Recent Projects
@@ -53,7 +53,7 @@ const ImageAccordion = () => {
             overflow: "hidden",
           }}
         >
-          <div className="bg-red-100 flex flex-col gap-10 w-full px-6 py-4">
+          <div className="bg-orange-600/20 flex flex-col gap-10 w-full px-6 py-4">
             {recentWorks.map((prev, index) => (
               <div key={index} className="w-full flex flex-col gap-5">
                 <div className="text-3xl font-sans font-semibold">
@@ -74,7 +74,7 @@ const ImageAccordion = () => {
 
       <div>
         <button
-          className="w-full sm:text-3xl text-2xl p-4 text-left bg-red-500 text-white rounded-lg"
+          className="w-full sm:text-3xl text-2xl p-4 text-left bg-customColor text-white rounded-lg"
           onClick={() => toggleAccordion(2)}
         >
           Previous Works
@@ -87,7 +87,7 @@ const ImageAccordion = () => {
             overflow: "hidden",
           }}
         >
-          <div className="bg-red-100 flex flex-col gap-10 w-full px-6 py-4">
+          <div className="bg-orange-600/20 flex flex-col gap-10 w-full px-6 py-4">
             {PrevWorks.map((prev, index) => (
               <div key={index} className="w-full flex flex-col gap-5">
                 <div className="text-3xl font-sans font-semibold">
