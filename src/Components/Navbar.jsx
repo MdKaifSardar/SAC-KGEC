@@ -56,7 +56,7 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="hover:bg-slate-300/50 flex flex-col justify-center items-center text-center p-2 rounded-lg"
+          className="hover:bg-slate-300/50 flex flex-col justify-center items-center text-center p-3 rounded-lg"
         >
           <CiMenuBurger className="font-bold text-4xl" />
         </button>

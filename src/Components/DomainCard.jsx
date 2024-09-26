@@ -8,7 +8,7 @@ const DomainCard = ({ item }) => {
           <img src={item.icon} alt={item.title} className="w-20 h-fit" />
         </div>
         <div>
-          <span className="sm:text-3xl text-2xl font-bold text-white">{item.title}</span>
+          <span className="sm:text-3xl text-2xl font-semibold text-white">{item.title}</span>
         </div>
       </div>
       <div className="sm:text-2xl text-md font-sans text-white font-thin">

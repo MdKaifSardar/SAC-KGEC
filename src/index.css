@@ -739,11 +739,11 @@ ul.nostyle i {
   background-color: rgb(255, 81, 81); /* Scrollbar color on hover */
 }
 
-.bg-image{
-  background-image: url("./assets/background/bg.jpeg");
+.bg-image {
+  background-image: url("./assets/background/bg1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   overflow: hidden;
   height: 90vh;
   color: #fff;

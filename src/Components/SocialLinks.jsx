@@ -11,7 +11,7 @@ const SocialLinks = () => {
         href="https://www.instagram.com/sac_kgec?igsh=MWJzN3dnMm1iNDFjMQ=="
         target="_blank"
         rel="noopener noreferrer"
-        className=" hover:cursor-pointer bg-customColor text-center flex felx-col hover:bg-orange-600/60 justify-center items-center w-fit h-fit rounded-full p-2"
+        className="shadow-lg hover:cursor-pointer bg-customColor text-center flex felx-col hover:bg-orange-600/60 justify-center items-center w-fit h-fit rounded-full p-2"
       >
         <FaInstagram className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
       </a>
@@ -19,7 +19,7 @@ const SocialLinks = () => {
         href="https://www.facebook.com/share/wBioE34VAxutAccD/?mibextid=qi2Omg"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+        className="shadow-lg hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
       >
         <FaFacebookF className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
       </a>
@@ -27,7 +27,7 @@ const SocialLinks = () => {
         href="https://youtube.com/@studentsautomobileclubkgec?si=6qhbX2yXYD2py0bw"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+        className="shadow-lg hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
       >
         <FaYoutube className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
       </a>
@@ -35,7 +35,7 @@ const SocialLinks = () => {
         href="https://www.linkedin.com/company/students-automobile-club-of-kgec/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+        className="shadow-lg hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
       >
         <FaLinkedin className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
       </a>
