@@ -1,20 +1,25 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import { CiMenuBurger } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { KGEC_Logo, Logo } from "../data/logo";
 
 const Navbar = ({ sections, activeSection, onNavClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <section className="fixed top-0 p-1 z-10 bg-white pl-10 pr-10 flex flex-row w-full">
+    <section className="py-5 fixed top-0 p-1 z-10 bg-white pl-10 pr-10 flex flex-row w-full">
       <nav className="flex flex-row justify-between items-center w-full h-30">
         <div className="hover:cursor-pointer gap-5 flex flex-row w-fit h-fit justify-center items-center">
-          <div className="w-28 h-28">
-            <img className="w-fit h-fit" src={logo} alt="SAC-KGEC Logo" />
+          <div className="border-r-2 pr-5 border-black">
+            <img
+              className="w-fit sm:h-20 h-14"
+              src={KGEC_Logo}
+              alt="KGEC-Logo"
+            />
           </div>
-          <div className="text-black text-4xl font-sans font-semibold">
+          <img className="w-fit sm:h-20 h-14" src={Logo} alt="SAC-KGEC Logo" />
+          <div className="text-black sm:text-4xl text-3xl font-sans font-semibold">
             SAC-KGEC
           </div>
         </div>
@@ -44,6 +49,8 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           </Link>
         </div>
       </nav>
+
+      {/* mobile nav */}
       <div className="z-20 md:hidden flex flex-col justify-center items-center">
         <button
           onClick={() => {
@@ -69,7 +76,9 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           <button
             className={`py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
           >
-            <Link to="/sponsor" className="text-white">Sponsors</Link>
+            <Link to="/sponsor" className="text-white">
+              Sponsors
+            </Link>
           </button>
         </nav>
       </div>

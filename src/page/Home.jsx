@@ -7,7 +7,6 @@ import PortfolioSection from "../Components/Portfolio";
 import Team from "../Components/Team";
 import Testimonial from "../Components/Testimonials";
 import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
 import { useEffect, useRef, useState } from "react";
 import SocialLinks from "../Components/SocialLinks";
 
@@ -63,7 +62,7 @@ const Home = () => {
           {
             id: "portfolio",
             ref: sections.portfolio,
-            label: "Portfolio",
+            label: "portfolio",
           },
           { id: "team", ref: sections.team, label: "Team" },
           {
@@ -84,7 +83,6 @@ const Home = () => {
       <Team ref={sections.team} />
       <Testimonial ref={sections.testimonial} />
       <Contact ref={sections.contact} />
-      <Footer />
     </div>
   );
 };

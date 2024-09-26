@@ -1,5 +1,6 @@
 import Logo from "../assets/logo.png"
+import KGEC_Logo from "../assets/KGEC-Logo.png"
 
 export {
-    Logo
+    Logo, KGEC_Logo
 }

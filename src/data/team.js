@@ -1,46 +1,49 @@
-import convener1 from '../assets/team/convenors/gopi_mallik.png'
-import convener2 from '../assets/team/convenors/sourav_kumar_dey.png'
-import convener3 from '../assets/team/convenors/subhadeep_das.png'
-import profile from '../assets/profile.jpeg'
+import convener1 from "../assets/team/convenors/Gopi Mallik.png";
+import convener2 from "../assets/team/convenors/Sourav Kumar Dey.png";
+import convener3 from "../assets/team/convenors/Subhadeep Das.png";
+import profile from "../assets/profile.jpeg";
 
 const convenors = [
   {
     name: "Gopi Mallick",
     title: "Convenor",
     imgSrc: convener1,
-    description:
-      "Mechanical Engineering Department KGEC 4th year",
+    department: "Mechanical Engineering Department,",
+    year: "KGEC 4th Year",
     social: {
       facebook: "#",
       twitter: "#",
       googlePlus: "#",
-      linkedin: "#",
+      linkedin:
+        "https://www.linkedin.com/in/gopi-mallick-0a7b5b25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
   {
     name: "Subhadeep Das",
     title: "Convenor",
     imgSrc: convener3,
-    description:
-      "Mechanical Engineering Department KGEC 4th year",
+    department: "Mechanical Engineering Department,",
+    year: "KGEC 4th Year",
     social: {
       facebook: "#",
       twitter: "#",
       googlePlus: "#",
-      linkedin: "#",
+      linkedin:
+        "https://www.linkedin.com/in/subhadeepdas06?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
   {
     name: "Sourav Kumar Dey",
     title: "Convenor",
     imgSrc: convener2,
-    description:
-      "Mechanical Engineering Department KGEC 4th year",
+    department: "Mechanical Engineering Department,",
+    year: "KGEC 4th Year",
     social: {
       facebook: "#",
       twitter: "#",
       googlePlus: "#",
-      linkedin: "#",
+      linkedin:
+        "https://www.linkedin.com/in/sourav-kumar-dey-me?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
 ];

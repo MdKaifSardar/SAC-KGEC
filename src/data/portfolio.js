@@ -20,7 +20,8 @@ import gocart14 from "../assets/portfolio/gocart/pic (14).webp";
 import gocart15 from "../assets/portfolio/gocart/pic (15).webp";
 import gocart16 from "../assets/portfolio/gocart/pic (16).webp";
 import gocart17 from "../assets/portfolio/gocart/pic (17).webp";
-
+import gocart18 from "../assets/portfolio/gocart/pic (18).webp";
+// import gocart19 from "../assets/portfolio/gocart/pic (19).webp";
 
 import rec_gocart1 from "../assets/portfolio/recent/pic (1).jpeg";
 import rec_gocart2 from "../assets/portfolio/recent/pic (2).jpeg";
@@ -32,7 +33,7 @@ import rec_gocart7 from "../assets/portfolio/recent/pic (7).jpeg";
 import rec_gocart8 from "../assets/portfolio/recent/pic (8).jpeg";
 import rec_gocart9 from "../assets/portfolio/recent/pic (9).jpeg";
 import rec_gocart10 from "../assets/portfolio/recent/pic (10).jpeg";
-
+import rec_gocart11 from "../assets/portfolio/recent/pic (11).jpeg";
 
 const aviationImages = [
   {
@@ -140,12 +141,17 @@ const GoCartImages = [
   },
   {
     image: gocart17,
-    title: "",
+    title: "Showcasing Our Go-Cart",
+    text: "Go Cart",
+  },
+  {
+    image: gocart18,
+    title: "Showcasing Our Go-Cart",
     text: "Go Cart",
   },
 ];
 
-const recentImages=[
+const recentImages = [
   {
     image: rec_gocart1,
     title: "Building our latest Go-Cart",
@@ -196,7 +202,12 @@ const recentImages=[
     title: "Building our latest Go-Cart",
     text: "Go-Cart",
   },
-]
+  {
+    image: rec_gocart11,
+    title: "CAD Design",
+    text: "Go-Cart-Design",
+  },
+];
 
 const PrevWorks = [
   {
@@ -216,9 +227,10 @@ const PrevWorks = [
 const recentWorks = [
   {
     domain: "Go-Cart",
-    description: "Our clubs most recent works include building the our latest Go-Cart model",
+    description:
+      "Our clubs most recent works include building the our latest Go-Cart model",
     images: recentImages,
-  }
-]
+  },
+];
 
 export { PrevWorks, recentWorks };

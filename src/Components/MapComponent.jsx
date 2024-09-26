@@ -16,11 +16,11 @@ L.Marker.prototype.options.icon = DefaultIcon;
 const MapComponent = () => {
   const position = [22.992593545127082, 88.4487911059281];
   return (
-    <div className="sm:w-[50%] w-full sm:h-full h-[50vh]">
+    <div className="sm:w-[50%] w-full sm:h-full h-[50vh] z-[1]">
       <MapContainer
         center={position}
         zoom={13}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%", zIndex: -1 }} // Set z-index lower here
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

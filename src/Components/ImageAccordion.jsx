@@ -53,7 +53,7 @@ const ImageAccordion = () => {
             overflow: "hidden",
           }}
         >
-          <div className="bg-orange-600/20 flex flex-col gap-10 w-full px-6 py-4">
+          <div className="bg-red-100 flex flex-col gap-10 w-full px-6 py-4">
             {recentWorks.map((prev, index) => (
               <div key={index} className="w-full flex flex-col gap-5">
                 <div className="text-3xl font-sans font-semibold">
@@ -95,11 +95,9 @@ const ImageAccordion = () => {
                 </div>
                 <div className="overflow-x-auto scroll-container">
                   <div className="flex space-x-4 w-max whitespace-nowrap pb-5">
-                    {prev.images.map((image, imageIndex) => {
-                      if (imageIndex <= 5) {
-                        return <WorkImageCard key={imageIndex} image={image} />;
-                      }
-                    })}
+                    {prev.images.map((image, imageIndex) => (
+                      <WorkImageCard key={imageIndex} image={image} />
+                    ))}
                   </div>
                 </div>
               </div>

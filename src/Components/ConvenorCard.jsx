@@ -3,34 +3,36 @@ import { FaLinkedin } from "react-icons/fa";
 
 const ConvenorCard = ({ member }) => {
   return (
-    <div className="px-6 py-8 rounded-xl md:w-[30%] w-4/5 sm:w-4/5 bg-slate-200/40 shadow-lg flex flex-col justify-center items-center">
+    <div className="px-6 py-8 rounded-xl w-full bg-slate-200/40 shadow-lg flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
-        <div className="relative h-30 w-30 flex justify-center items-center group">
+        <div className="w-[80%] relative flex justify-center items-center group">
+          {/* Image */}
           <img
-            className="h-full w-full rounded-full"
+            className="w-full h-full rounded-full"
             src={member.imgSrc}
             alt={member.name}
           />
 
           {/* Overlay Div */}
           <a
-            href={member.social.linkedin} // Add LinkedIn URL here
+            href={member.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute inset-0 bg-blue-500 bg-opacity-50 rounded-full flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute inset-0 rounded-full flex justify-center items-center bg-blue-500 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
             <FaLinkedin className="h-14 w-14 text-white" />
           </a>
         </div>
 
+        {/* Member Details */}
         <div className="pt-6 flex flex-col justify-center items-center">
-          <h3 className="sm:text-3xl text-2xl font-semibold text-center">
+          <h3 className="text-red-600 sm:text-3xl text-2xl font-semibold text-center">
             {member.name}
           </h3>
-          <span className="text-center font-semibold text-red-600">
-            {member.title}
-          </span>
-          <p className="pt-4 text-center">{member.description}</p>
+          <div className="pt-4 flex flex-col justify-center items-center w-fit h-fit">
+            <p className="font-semibold text-center">{member.department}</p>
+            <p className="font-semibold text-center">{member.year}</p>
+          </div>
         </div>
       </div>
     </div>

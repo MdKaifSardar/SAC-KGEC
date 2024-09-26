@@ -13,8 +13,8 @@ const Team = forwardRef((props, ref) => {
         </p>
       </div>
 
-      <div className="flex gap-2 flex-col justify-center items-center">
-        <div className="p-10 gap-10 flex md:flex-row flex-col justify-center items-center">
+      <div className="w-[90%] flex gap-2 flex-col justify-center items-center">
+        <div className="w-full py-10 gap-10 flex md:flex-row flex-col justify-center items-center">
           {convenors.map((member, index) => (
             <ConvenorCard key={index} index={index} member={member} />
           ))}

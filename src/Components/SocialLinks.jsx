@@ -6,19 +6,39 @@ import { FaInstagram } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-fit h-full gap-4 fixed right-2">
-      <div className="bg-white text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2">
-        <FaInstagram className="text-black font-bold sm:h-14 h-8 sm:w-14 w-8" />
-      </div>
-      <div className="bg-white text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2">
-        <FaFacebookF className="text-black font-bold sm:h-14 h-8 sm:w-14 w-8" />
-      </div>
-      <div className="bg-white text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2">
-        <FaYoutube className="text-black font-bold sm:h-14 h-8 sm:w-14 w-8" />
-      </div>
-      <div className="bg-white text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2">
-        <FaLinkedin className="text-black font-bold sm:h-14 h-8 sm:w-14 w-8" />
-      </div>
+    <div className="z-10 flex flex-col justify-center items-center w-fit h-full gap-4 fixed right-2">
+      <a
+        href="https://www.instagram.com/sac_kgec?igsh=MWJzN3dnMm1iNDFjMQ=="
+        target="_blank"
+        rel="noopener noreferrer"
+        className=" hover:cursor-pointer bg-customColor text-center flex felx-col hover:bg-orange-600/60 justify-center items-center w-fit h-fit rounded-full p-2"
+      >
+        <FaInstagram className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
+      </a>
+      <a
+        href="https://www.facebook.com/share/wBioE34VAxutAccD/?mibextid=qi2Omg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+      >
+        <FaFacebookF className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
+      </a>
+      <a
+        href="https://youtube.com/@studentsautomobileclubkgec?si=6qhbX2yXYD2py0bw"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+      >
+        <FaYoutube className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/students-automobile-club-of-kgec/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:bg-orange-600/60 hover:cursor-pointer  bg-customColor text-center flex felx-col justify-center items-center w-fit h-fit rounded-full p-2"
+      >
+        <FaLinkedin className="text-white font-bold sm:h-10 h-8 sm:w-10 w-8" />
+      </a>
     </div>
   );
 };

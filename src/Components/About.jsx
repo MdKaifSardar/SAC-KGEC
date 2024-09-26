@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const AboutSection = forwardRef((props, ref) => {
   return (
     <section
+      id="about"
       ref={ref}
       className="py-10 w-full flex flex-col justify-center items-center"
     >
@@ -14,7 +15,7 @@ const AboutSection = forwardRef((props, ref) => {
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: false, amount: '50%' }}
+            viewport={{ once: false, amount: "50%" }}
             className="heading-custom"
           >
             About Us
@@ -23,12 +24,12 @@ const AboutSection = forwardRef((props, ref) => {
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: false, amount: '50%' }}
+            viewport={{ once: false, amount: "50%" }}
             className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-full"
           >
             Students’ Automobile Club of Kalyani Government Engineering College
             (SAC-KGEC), is a student-driven initiative aimed at enhancing
-            practical engineering skills through hands-on projects
+            practical engineering skills through hands-on projects.
           </motion.p>
         </div>
 
@@ -37,7 +38,7 @@ const AboutSection = forwardRef((props, ref) => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            viewport={{ once: false, amount: '50%' }}
+            viewport={{ once: false, amount: "50%" }}
             className="sm:w-[30%] w-[50%]"
           >
             <img className="w-full h-full" src={Logo} alt="About Us" />
