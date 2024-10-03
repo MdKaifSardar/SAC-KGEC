@@ -26,7 +26,7 @@ const Sponsers = () => {
                 <span className="font-sans font-bold text-white sm:text-2xl text-xl">
                   {content.title}
                 </span>
-                <span className="font-sans sm:text-xl text-sm text-white pl-5 ">
+                <span className="leading-tight font-sans sm:text-xl text-lg text-white pl-5 ">
                   {content.text}
                 </span>
               </div>
