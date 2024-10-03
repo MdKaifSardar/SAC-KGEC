@@ -5,7 +5,7 @@ import ContactUsForm from "./ContactUsForm";
 
 const ContactUs = forwardRef((props, ref) => {
   return (
-    <div className="ml-auto mr-auto sm:w-[90%] w-full flex flex-col" ref={ref}>
+    <div className="pb-10 ml-auto mr-auto sm:w-[90%] w-full flex flex-col" ref={ref}>
       <section className="flex flex-col justify-center items-center pt-10 pb-10">
         <h2 className="heading-custom">Contact Us</h2>
         <p className="main-text font-semibold">
