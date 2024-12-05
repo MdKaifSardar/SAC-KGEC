@@ -58,3 +58,11 @@
     flex-direction: column;
   } 
 }
+
+.slick-slide > div{
+  margin: 10px;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #000 !important;
+}

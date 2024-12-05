@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Components/Navbar";
 import HeroBanner from "../Components/HeroBanner";
 import Features from "../Components/Features";
@@ -7,11 +6,13 @@ import PortfolioSection from "../Components/Portfolio";
 import Team from "../Components/Team";
 import Testimonial from "../Components/Testimonials";
 import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 import { useEffect, useRef, useState } from "react";
 import SocialLinks from "../Components/SocialLinks";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const navbarHeight = 100;
 
   const sections = {
     home: useRef(null),
@@ -25,7 +26,7 @@ const Home = () => {
 
   const handleScroll = () => {
     const sectionIds = Object.keys(sections);
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
+    const scrollPosition = window.scrollY + navbarHeight + window.innerHeight / 3;
 
     let activeId = "home";
     for (let id of sectionIds) {
@@ -33,7 +34,7 @@ const Home = () => {
       if (
         section &&
         section.offsetTop < scrollPosition &&
-        section.offsetTop + section.clientHeight > scrollPosition
+        section.offsetTop + section.clientHeight > scrollPosition - navbarHeight
       ) {
         activeId = id;
       }
@@ -48,7 +49,7 @@ const Home = () => {
 
   const scrollToSection = (ref) => {
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: ref.current.offsetTop - navbarHeight,
       behavior: "smooth",
     });
   };
@@ -57,7 +58,7 @@ const Home = () => {
       <Navbar
         sections={[
           { id: "home", ref: sections.home, label: "Home" },
-          { id: "features", ref: sections.features, label: "Features" },
+          { id: "features", ref: sections.features, label: "Domains" },
           { id: "about", ref: sections.about, label: "About" },
           {
             id: "portfolio",
@@ -83,6 +84,7 @@ const Home = () => {
       <Team ref={sections.team} />
       <Testimonial ref={sections.testimonial} />
       <Contact ref={sections.contact} />
+      <Footer/>
     </div>
   );
 };

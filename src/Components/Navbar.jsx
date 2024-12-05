@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { KGEC_Logo, Logo } from "../data/logo";
+import PropTypes from "prop-types";
 
 const Navbar = ({ sections, activeSection, onNavClick }) => {
+  Navbar.propTypes = {
+  sections: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      ref: PropTypes.object.isRequired,
+      label: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  activeSection: PropTypes.string.isRequired,
+  onNavClick: PropTypes.func.isRequired,
+};
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   return (
@@ -25,6 +37,12 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
         </div>
 
         <div className="main-nav">
+          <Link
+            to="/sponsor"
+            className="h-full md:text-2xl py-3 text-lg px-4 rounded-2xl text-black"
+          >
+            Sponsors
+          </Link>
           {sections.map((section, index) => (
             <button
               key={index}
@@ -41,12 +59,6 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
               {section.label}
             </button>
           ))}
-          <Link
-            to="/sponsor"
-            className="h-full md:text-2xl py-3 text-lg px-4 rounded-2xl text-black"
-          >
-            Sponsors
-          </Link>
         </div>
       </nav>
 
@@ -61,6 +73,13 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           <CiMenuBurger className="font-bold text-4xl" />
         </button>
         <nav className={isOpen ? "navMenu-open" : " navMenu-closed"}>
+          <button
+            className={`py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
+          >
+            <Link to="/sponsor" className="text-white">
+              Sponsors
+            </Link>
+          </button>
           {sections.map((section, index) => (
             <button
               key={index}
@@ -73,17 +92,12 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
               {section.label}
             </button>
           ))}
-          <button
-            className={`py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
-          >
-            <Link to="/sponsor" className="text-white">
-              Sponsors
-            </Link>
-          </button>
         </nav>
       </div>
     </section>
   );
+  
 };
+
 
 export default Navbar;
