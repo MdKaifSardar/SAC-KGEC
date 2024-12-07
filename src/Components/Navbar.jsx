@@ -7,16 +7,16 @@ import PropTypes from "prop-types";
 
 const Navbar = ({ sections, activeSection, onNavClick }) => {
   Navbar.propTypes = {
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      ref: PropTypes.object.isRequired,
-      label: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  activeSection: PropTypes.string.isRequired,
-  onNavClick: PropTypes.func.isRequired,
-};
+    sections: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        ref: PropTypes.object.isRequired,
+        label: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    activeSection: PropTypes.string.isRequired,
+    onNavClick: PropTypes.func.isRequired,
+  };
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   return (
@@ -52,8 +52,12 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
                   : "text-black"
               }`}
               onClick={() => {
-                navigate("/");
-                onNavClick(section.ref);
+                if (section.id === "team") {
+                  navigate("/team");
+                } else {
+                  navigate("/");
+                  onNavClick(section.ref);
+                }
               }}
             >
               {section.label}
@@ -85,8 +89,12 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
               key={index}
               className={`text-white py-4 h-fit md:text-5xl text-4xl font-semibold font-sans`}
               onClick={() => {
-                navigate("/");
-                onNavClick(section.ref);
+                if (section.id === "team") {
+                  navigate("/team");
+                } else {
+                  navigate("/");
+                  onNavClick(section.ref);
+                }
               }}
             >
               {section.label}
@@ -96,8 +104,6 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
       </div>
     </section>
   );
-  
 };
-
 
 export default Navbar;

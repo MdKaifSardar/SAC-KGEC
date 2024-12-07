@@ -7,7 +7,7 @@ import Team from "../Components/Team";
 import Testimonial from "../Components/Testimonials";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import SocialLinks from "../Components/SocialLinks";
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
     contact: useRef(null),
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const sectionIds = Object.keys(sections);
     const scrollPosition = window.scrollY + navbarHeight + window.innerHeight / 3;
 
@@ -40,12 +40,12 @@ const Home = () => {
       }
     }
     setActiveSection(activeId);
-  };
+  }, [sections, navbarHeight]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   const scrollToSection = (ref) => {
     window.scrollTo({
