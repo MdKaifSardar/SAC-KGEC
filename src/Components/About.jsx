@@ -26,9 +26,8 @@ const AboutSection = forwardRef((props, ref) => {
             viewport={{ once: false, amount: "50%" }}
             className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-full"
           >
-            Students’ Automobile Club of Kalyani Government Engineering College
-            (SAC-KGEC), is a student-driven initiative aimed at enhancing
-            practical engineering skills through hands-on projects.
+          In the early months of 2020, a group of enterprising students conceived a transformative vision: to create a nexus between core engineering disciplines and contemporary technological innovations. Their ambition was not merely to refine technical prowess but to empower students to conceptualize and execute real-world projects of core engineering intertwined with the changing and upcoming technology that could tangibly impact their communities and industries. This vision culminated in the establishment of SAC-KGEC, and we had the distinct privilege of materializing this concept during the first year as founding members, alongside a team of equally committed collaborators.<br/>
+          Students&apos; Automobile Club of Kalyani Government Engineering College (SAC-KGEC) is a student-driven initiative aimed at enhancing practical engineering skills through hands-on projects.
           </motion.p>
         </div>
 
@@ -50,15 +49,7 @@ const AboutSection = forwardRef((props, ref) => {
               viewport={{ once: false }}
               className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-full"
             >
-              We specialize in designing and building go-karts, offering
-              students a platform to apply theoretical knowledge in real-world
-              scenarios. Our club emphasizes innovation, teamwork, and the
-              spirit of engineering excellence. We also regularly participate in
-              the Formula Kart Design Challenge (FKDC), a prestigious
-              national-level competition that challenges students to design,
-              build, and race go-karts. Over the years, we have gained
-              significant experience in crafting vehicles from scratch,
-              constantly improving with each new project.
+              Since its inception, SAC-KGEC has relentlessly advanced, transcending initial expectations and expanding across multifarious domains. It has been instrumental in enhancing the cognitive faculties of countless students at KGEC, refining their expertise in diverse areas such as manufacturing, design, and innovation. Yet, SAC-KGEC&apos;s influence extends far beyond the confines of technical acumen; it has played a pivotal role in the holistic development of its members, equipping them with the requisite skills to excel in the competitive and ever-evolving professional landscape. Through initiatives that fostered competencies such as public speaking, mass management, project scheduling, team building, and leadership, SAC-KGEC has ensured its members are not only proficient engineers but also versatile and industry-ready professionals.
             </motion.div>
           </div>
         </div>

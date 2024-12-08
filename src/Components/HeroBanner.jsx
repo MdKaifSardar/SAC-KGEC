@@ -41,7 +41,7 @@ const HeroBanner = forwardRef((props, ref) => {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+      <div className="relative flex flex-col justify-center items-center h-full text-white text-center px-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
