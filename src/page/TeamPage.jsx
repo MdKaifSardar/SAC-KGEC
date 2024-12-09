@@ -34,9 +34,9 @@ const MemberCard = ({ member }) => (
       </div>
     </div>
   </div>
-  <div className="p-6 text-center">
+  <div className="p-6 text-center flex flex-col items-center justify-center min-h-[120px]">
     <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-red-600 transition-colors">{member.name}</h3>
-    <p className="text-sm text-gray-600 mt-2">{member.position}</p>
+    <p className="text-md text-gray-600 mt-2">{member.position}</p>
   </div>
 </motion.div>
 
