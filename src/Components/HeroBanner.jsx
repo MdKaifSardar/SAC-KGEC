@@ -1,10 +1,10 @@
 import { forwardRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import bg0 from "../assets/background/bg0.jpg";
 import bg2 from "../assets/background/bg.jpg";
 import bg1 from "../assets/background/bg.jpeg";
-import bg from "../assets/background/SAC.jpg";
 
-const images = [bg, bg1, bg2];
+const images = [bg0, bg1, bg2];
 
 const HeroBanner = forwardRef((props, ref) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

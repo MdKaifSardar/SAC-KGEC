@@ -12,6 +12,7 @@ import arkadeepMukherjee from "../assets/members/Arkadeep Mukherjee.jpg";
 import sandipMondal from "../assets/members/Sandip Mondal.jpg";
 import afzalHossainMallick from "../assets/members/EDI - Z.jpg";
 import debdulalSaha from "../assets/members/Debdulal Saha.jpg";
+import suryaChatterjee from "../assets/members/surya da.jpg";
 import subhajitPal from "../assets/members/Subhajit Pal.png";
 import imanNaskar from "../assets/members/Iman Naskar.jpg";
 import arindamKarmakar from "../assets/members/Arindam Karmakar.jpg";
@@ -26,6 +27,7 @@ import subhadeepDas from "../assets/team/convenors/Subhadeep Das.png";
 import soumyadeepNaskar from "../assets/members/soumyadeep naskar.jpg";
 import debasisSir from "../assets/Debasis sir.jpg";
 import santanuDasSir from "../assets/Santanu sir.jpg";
+import debasisCSir from "../assets/chakrabartee sir.jpg";
 // Import other member images...
 
 export const faculty = [
@@ -44,7 +46,7 @@ export const faculty = [
   {
     name: "Dr. Debasish Bhattacharya sir",
     position: "Faculty Head",
-    imgSrc: aritrenduPramanik,
+    imgSrc: debasisCSir,
     linkedin: "https://linkedin.com/in/johndoe",
   },
   // Add more faculty members...
@@ -110,8 +112,8 @@ export const domainLeads = [
   {
     name: "Surya Chatterjee",
     position: "SBCS Domain Lead",
-    imgSrc: aritrenduPramanik,
-    linkedin: "https://linkedin.com/in/janesmith",
+    imgSrc: suryaChatterjee,
+    linkedin: "https://www.linkedin.com/in/surya-chatterjee-5126531b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Arkadeep Mukherjee",

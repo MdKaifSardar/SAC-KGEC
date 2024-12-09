@@ -1,6 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { PrevWorks, recentWorks } from "../data/portfolio";
 import WorkImageCard from "./WorkImageCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ImageAccordion = () => {
   const [openAccordion, setOpenAccordion] = useState(1);
@@ -36,6 +39,34 @@ const ImageAccordion = () => {
     setOpenAccordion((prevOpen) => (prevOpen === id ? null : id));
   };
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 0,
+    variableWidth: true,
+    arrows: false,
+    cssEase: "linear",
+    pauseOnHover: false,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
+
   return (
     <div className="ml-auto mr-auto sm:w-[92%] w-[95%] space-y-4 p-5">
       <div>
@@ -59,13 +90,13 @@ const ImageAccordion = () => {
                 <div className="text-3xl font-sans font-semibold">
                   {prev.domain}
                 </div>
-                <div className="overflow-x-auto scroll-container">
-                  <div className="flex space-x-4 w-max whitespace-nowrap pb-5">
-                    {prev.images.map((image, imageIndex) => (
-                      <WorkImageCard key={imageIndex} image={image} />
-                    ))}
-                  </div>
-                </div>
+                <Slider {...settings}>
+                  {prev.images.map((image, imageIndex) => (
+                    <div key={imageIndex} className="px-2">
+                      <WorkImageCard image={image} />
+                    </div>
+                  ))}
+                </Slider>
               </div>
             ))}
           </div>
@@ -93,13 +124,13 @@ const ImageAccordion = () => {
                 <div className="text-3xl font-sans font-semibold">
                   {prev.domain}
                 </div>
-                <div className="overflow-x-auto scroll-container">
-                  <div className="flex space-x-4 w-max whitespace-nowrap pb-5">
-                    {prev.images.map((image, imageIndex) => (
-                      <WorkImageCard key={imageIndex} image={image} />
-                    ))}
-                  </div>
-                </div>
+                <Slider {...settings}>
+                  {prev.images.map((image, imageIndex) => (
+                    <div key={imageIndex} className="px-2">
+                      <WorkImageCard image={image} />
+                    </div>
+                  ))}
+                </Slider>
               </div>
             ))}
           </div>
