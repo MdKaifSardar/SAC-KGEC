@@ -15,6 +15,10 @@
   @apply sm:text-2xl font-semibold font-sans pl-10 pr-10 pt-3 text-center text-xl text-black;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -41,26 +45,24 @@
   }
 }
 .navMenu-open {
-  height: 91vh;
+  height: calc(100vh - 6.3rem);
   width: 100vw;
-  background-color: rgba(73, 73, 73, 0.582);
+  background-color: rgba(73, 73, 73, 1);
   top: 6.3rem;
   right: 0rem;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: slideOpen;
-  animation-duration: 0.2s;
+  animation: slideOpen 0.2s ease-out forwards;
   transform-origin: right;
-  animation-timing-function: ease-out;
 }
 
 .navMenu-closed {
-  height: 100vh;
+  height: calc(100vh - 6.3rem);
   width: 0vw;
-  background-color: rgba(73, 73, 73, 0.582);
+  background-color: rgba(73, 73, 73, 1);
   right: 0rem;
   opacity: 0;
   display: flex;
@@ -68,11 +70,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 6.3rem;
-  animation: slideClose;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-out;
+  animation: slideClose 0.2s ease-out forwards;
+}
+
+.navMenu-open button{
+  width: 100%;
+  text-align: center;
+}
+
+.navMenu-open button:hover{
+  background-color: #e87b59;
+  color: white;
 }
 
 @media (max-width: 880px) {
@@ -681,44 +691,6 @@ ul.nostyle i {
   position: absolute;
   width: 100px;
 }
-/***********************
-********* Footer ******
-************************/
-#footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
-  background: #c3360b;
-}
-#footer a {
-  color: #fff;
-}
-#footer a:hover {
-  color: #ffa98e;
-}
-#footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 -7.5px;
-}
-#footer ul > li {
-  display: inline-block;
-
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  padding: 3px 0;
-  width: 31px;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  #footer .social-icons {
-    float: right;
-  }
-}
-.form-control {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
 .scroll-container::-webkit-scrollbar {
   width: 20px; /* Width of the entire scrollbar */
   height: 10px; /* For horizontal scrollbar */

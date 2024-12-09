@@ -9,6 +9,8 @@ import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import { useEffect, useRef, useState, useCallback } from "react";
 import SocialLinks from "../Components/SocialLinks";
+import ClubActivity from "../Components/ClubActivity";
+import AboutKGEC from "../Components/AboutKGEC";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -80,6 +82,8 @@ const Home = () => {
       <HeroBanner ref={sections.home} />
       <Features ref={sections.features}/>
       <AboutSection ref={sections.about} />
+      <ClubActivity />
+      <AboutKGEC />
       <PortfolioSection ref={sections.portfolio} />
       <Team ref={sections.team} />
       <Testimonial ref={sections.testimonial} />

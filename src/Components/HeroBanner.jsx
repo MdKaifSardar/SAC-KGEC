@@ -1,19 +1,17 @@
 import { forwardRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bg from "../assets/background/bg.jpeg";
-import bg1 from "../assets/background/bg1.jpeg";
+import bg2 from "../assets/background/bg.jpg";
+import bg1 from "../assets/background/bg.jpeg";
+import bg from "../assets/background/SAC.jpg";
 
-const images = [
-  bg,
-  bg1
-];
+const images = [bg, bg1, bg2];
 
 const HeroBanner = forwardRef((props, ref) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     }, 7000);
@@ -22,7 +20,11 @@ const HeroBanner = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section ref={ref} id="home" className="relative w-full h-[90vh] overflow-hidden mt-[5vh]">
+    <section
+      ref={ref}
+      id="home"
+      className="relative w-full h-[95vh] overflow-hidden mt-[5vh]"
+    >
       <AnimatePresence initial={false}>
         <motion.div
           key={currentImageIndex}
@@ -33,9 +35,9 @@ const HeroBanner = forwardRef((props, ref) => {
           className="absolute inset-0"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${images[currentImageIndex]})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
           }}
         />
       </AnimatePresence>
@@ -56,18 +58,9 @@ const HeroBanner = forwardRef((props, ref) => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-xl md:text-2xl max-w-3xl"
         >
-          Students&apos; Automobile Club of Kalyani Government Engineering College
+          Students&apos; Automobile Club of Kalyani Government Engineering
+          College
         </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-8"
-        >
-          <a className="btn btn-primary btn-lg" href="http://localhost:3000">
-            Log in
-          </a>
-        </motion.div>
       </div>
 
       {/* Navigation dots */}
@@ -77,7 +70,7 @@ const HeroBanner = forwardRef((props, ref) => {
             key={index}
             onClick={() => setCurrentImageIndex(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              currentImageIndex === index ? 'bg-white scale-125' : 'bg-white/50'
+              currentImageIndex === index ? "bg-white scale-125" : "bg-white/50"
             }`}
           />
         ))}
@@ -86,5 +79,5 @@ const HeroBanner = forwardRef((props, ref) => {
   );
 });
 
-HeroBanner.displayName = 'HeroBanner';
+HeroBanner.displayName = "HeroBanner";
 export default HeroBanner;

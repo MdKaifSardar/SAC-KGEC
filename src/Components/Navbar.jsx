@@ -65,6 +65,12 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
               {section.label}
             </button>
           ))}
+          <a
+            href="http://localhost:3000"
+            className="h-full md:text-2xl py-3 text-lg px-4 rounded-2xl bg-red-500 text-white hover:bg-red-600 transition-colors"
+          >
+            Log in
+          </a>
         </div>
       </nav>
 
@@ -74,7 +80,7 @@ const Navbar = ({ sections, activeSection, onNavClick }) => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="hover:bg-slate-300/30 flex flex-col justify-center items-center text-center p-3 rounded-lg"
+          className="hover:bg-slate-300/80 flex flex-col justify-center items-center text-center p-3 rounded-lg"
         >
           <CiMenuBurger className="font-bold text-4xl" />
         </button>

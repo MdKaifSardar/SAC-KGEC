@@ -15,7 +15,7 @@ const Features = forwardRef((props, ref) => {
       >
         <div className="flex flex-col justify-center items-center w-full">
           <div className="py-10 flex flex-col justify-center items-center">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -42,5 +42,5 @@ const Features = forwardRef((props, ref) => {
   );
 });
 
-Features.displayName = 'Features';
+Features.displayName = "Features";
 export default Features;

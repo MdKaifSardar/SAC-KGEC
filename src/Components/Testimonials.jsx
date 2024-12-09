@@ -148,7 +148,7 @@ const Testimonials = forwardRef((props, ref) => {
   return (
     <section ref={ref}>
       <motion.h2
-        initial={{ opacity: 0, y: 0, x: -100 }}
+        initial={{ opacity: 0, y: -20, x: 0 }}
         whileInView={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false, amount: "50%" }}

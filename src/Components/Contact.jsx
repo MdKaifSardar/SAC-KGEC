@@ -62,7 +62,9 @@ const Contact = forwardRef((props, ref) => {
               <FaMapMarkerAlt className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold mb-2">Address</h3>
-            <p className="text-gray-600">Kalyani Government Engineering College</p>
+            <p className="text-gray-600">
+              Kalyani Government Engineering College
+            </p>
             <p className="text-gray-600">Kalyani, Nadia</p>
             <p className="text-gray-600">West Bengal - 741235</p>
           </motion.div>
@@ -80,7 +82,12 @@ const Contact = forwardRef((props, ref) => {
             <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
+                <label
+                  htmlFor="name"
+                  className="block text-gray-700 font-medium mb-2"
+                >
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -89,7 +96,12 @@ const Contact = forwardRef((props, ref) => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 font-medium mb-2"
+                >
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -98,7 +110,12 @@ const Contact = forwardRef((props, ref) => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
+                <label
+                  htmlFor="message"
+                  className="block text-gray-700 font-medium mb-2"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   rows={4}
@@ -136,5 +153,5 @@ const Contact = forwardRef((props, ref) => {
   );
 });
 
-Contact.displayName = 'Contact';
+Contact.displayName = "Contact";
 export default Contact;
