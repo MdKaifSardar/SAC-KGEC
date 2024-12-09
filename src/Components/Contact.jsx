@@ -32,7 +32,7 @@ const Contact = forwardRef((props, ref) => {
             <h3 className="text-xl font-bold mb-2">Phone</h3>
             <p className="text-gray-600">Debdulal Saha</p>
             <p className="text-gray-600">+91 90911 71996</p>
-            <p className="text-gray-600 mt-2">Afzal Hossain Mallik</p>
+            <p className="text-gray-600 mt-2">Afzal Hossain Mallick</p>
             <p className="text-gray-600">+91 98327 66191</p>
           </motion.div>
 
