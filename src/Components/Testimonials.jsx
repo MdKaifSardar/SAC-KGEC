@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import image1 from "../assets/testimonials/Alumni1.png";
 import image2 from "../assets/testimonials/Alumni2.jpg";
-import test1 from "../assets/testimonials/Alumni1.png";
 import { forwardRef, useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,20 +11,13 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Contrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply",
-    imgSrc: test1,
-    name: "James Bond",
-  },
-  {
-    id: 2,
-    quote:
       "I had the honor of serving as the Coordinator and Domain Lead of SAC-KGEC in 2020-21 and 2022, as well as the Convenor during the 2022-23 session. Throughout my tenure, I was resolutely committed to fostering an inclusive environment, ensuring that all members were afforded equal opportunities to contribute and excel. I spearheaded a multitude of initiatives, including seminars, workshops, academic sessions, and industrial excursions, all designed to enrich the learning experience and cultivate a sense of camaraderie within the organization. I assumed responsibility for overseeing the entirety of our projects—from financial management and project timelines to procurement, approvals, infrastructure development, and resource optimization. These responsibilities allowed me to hone both my strategic and operational acumen, and the experiences I garnered have had an indelible impact on my academic and professional trajectory. Every moment spent within SAC-KGEC was not only enlightening but truly transformative.\n\nI am profoundly indebted to our esteemed faculty mentors, particularly SD Sir and Debasis Sir, whose sagacious guidance and unwavering support were instrumental in navigating the challenges we encountered. Equally, I owe much of our collective success to the relentless enthusiasm and commitment of my fellow SAC members. Together, we overcame numerous obstacles, culminating in milestones such as the creation of our inaugural in-house project, the \"Bingo\" cart. The synergy within the team was a constant wellspring of motivation, and I was fortunate to lead such a dynamic and driven group of individuals whose collective efforts elevated us to unprecedented heights.",
     imgSrc: image2,
     name: "Sarbodaman Banerjee",
     company: "Alumni, SAC-KGEC"
   },
   {
-    id: 3,
+    id: 2,
     quote:
       "As a former member, project team lead & convenor of the SAC-KGEC, I had the privilege of being part of an incredible community of automobile geeks from 2021 to 2023. \n" +
       "Joining the SAC was one of the best decisions I made during my college years." +
@@ -68,7 +60,7 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="flex flex-col justify-center items-center gap-4 p-4">
         <div
           ref={quoteRef}
-          className={`text-center text-2xl font-medium relative transition-all duration-300 ${
+          className={`text-justify text-2xl font-medium relative transition-all duration-300 ${
             !isExpanded ? "max-h-[150px] overflow-hidden" : "max-h-full"
           }`}
         >
@@ -112,7 +104,7 @@ const Testimonials = forwardRef((props, ref) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,

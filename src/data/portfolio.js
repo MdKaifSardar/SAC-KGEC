@@ -35,6 +35,15 @@ import rec_gocart9 from "../assets/portfolio/recent/pic (9).jpeg";
 import rec_gocart10 from "../assets/portfolio/recent/pic (10).jpeg";
 import rec_gocart11 from "../assets/portfolio/recent/pic (11).jpeg";
 
+import fkdc1 from "../assets/fkdc/fkdc1.jpeg";
+import fkdc2 from "../assets/fkdc/fkdc2.jpeg";
+import fkdc3 from "../assets/fkdc/fkdc3.jpeg";
+import fkdc4 from "../assets/fkdc/fkdc4.jpeg";
+import fkdc5 from "../assets/fkdc/fkdc5.jpeg";
+import fkdc6 from "../assets/fkdc/fkdc6.jpg";
+
+import bg3 from "../assets/background/bg3.jpg";
+
 const aviationImages = [
   {
     image: avpic1,
@@ -206,6 +215,41 @@ const recentImages = [
     image: rec_gocart11,
     title: "CAD Design",
     text: "Go-Cart-Design",
+  },
+  {
+    image: fkdc1,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: fkdc2,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: fkdc3,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: fkdc4,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: fkdc5,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: fkdc6,
+    title: "FKDC S8",
+    text: "Picture",
+  },
+  {
+    image: bg3,
+    title: "FKDC S8",
+    text: "Picture",
   },
 ];
 
