@@ -92,10 +92,10 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
             <a 
-                href="https://github.com/SAC-KGEC"
+                href="https://www.facebook.com/kgecSAC/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-red-500 transition-colors text-2xl"
+                className="hover:text-red-500 transition-colors text-5xl"
               >
                 <FaFacebook />
               </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                 href="https://www.instagram.com/sac_kgec?igsh=MWJzN3dnMm1iNDFjMQ=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-red-500 transition-colors text-2xl"
+                className="hover:text-red-500 transition-colors text-5xl"
               >
                 <FaInstagram />
               </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/students-automobile-club-of-kgec/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-red-500 transition-colors text-2xl"
+                className="hover:text-red-500 transition-colors text-5xl"
               >
                 <FaLinkedin />
               </a>

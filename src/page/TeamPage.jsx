@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
 import teamBanner from "../assets/background/bg.jpeg"; // Add your banner image
-import { faculty, convenors, coordinators, domainLeads, fourthYear, thirdYear } from "../data/teamMembers";
+import { faculty, convenors, coordinators, domainLeads} from "../data/teamMembers";
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Navbar from "../Components/Navbar";
@@ -126,7 +126,7 @@ const TeamPage = () => {
         >
           <div className="absolute inset-0 bg-black/50" />
         </div>
-        <div className="relative h-full flex flex-col items-center justify-center text-white">
+        <div className="relative h-full flex flex-col items-center justify-end pb-12 text-white">
           <motion.h1
             initial={{ y: -20 }}
             animate={{ y: 0 }}
@@ -150,10 +150,10 @@ const TeamPage = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <TeamSection title="Faculty Advisors" members={faculty} />
         <TeamSection title="Convenors" members={convenors} />
-        <TeamSection title="Coordinators" members={coordinators} isDropdown={true} />
-        <TeamSection title="Domain Leads" members={domainLeads} isDropdown={true} />
-        <TeamSection title="Fourth Year Members" members={fourthYear} isDropdown={true} />
-        <TeamSection title="Third Year Members" members={thirdYear} isDropdown={true} />
+        <TeamSection title="Coordinators" members={coordinators} />
+        <TeamSection title="Domain Leads" members={domainLeads}  />
+        {/* <TeamSection title="Fourth Year Members" members={fourthYear} isDropdown={true} />
+        <TeamSection title="Third Year Members" members={thirdYear} isDropdown={true} /> */}
       </div>
 
       <Footer />

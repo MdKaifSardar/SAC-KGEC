@@ -47,8 +47,7 @@ const Contact = forwardRef((props, ref) => {
               <FaEnvelope className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold mb-2">Email</h3>
-            <p className="text-gray-600">sac@kgec.edu.in</p>
-            <p className="text-gray-600">info@sackgec.org</p>
+            <p className="text-gray-600">sac.kgec@kgec.edu.in</p>
           </motion.div>
 
           {/* Address */}
