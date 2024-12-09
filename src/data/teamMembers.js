@@ -23,7 +23,7 @@ import souravKumarDey from "../assets/team/convenors/Sourav Kumar Dey.png";
 import rushtamChakraborty from "../assets/members/Rushtam Chakraborty.jpg";
 import souvanDas from "../assets/members/SUSHOVAN DAS.jpeg";
 import subhadeepDas from "../assets/team/convenors/Subhadeep Das.png";
-import debasisSir from "../assets/Debasis Sir.jpg";
+import debasisSir from "../assets/Debasis sir.jpg";
 import santanuDasSir from "../assets/Santanu Sir.jpg";
 // Import other member images...
 
