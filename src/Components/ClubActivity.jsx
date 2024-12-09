@@ -8,7 +8,7 @@ const ClubActivity = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="heading-custom"
         >
           Club Activity
@@ -17,7 +17,7 @@ const ClubActivity = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-[90%] text-center"
         >
           Since its inception, SAC-KGEC has relentlessly advanced,

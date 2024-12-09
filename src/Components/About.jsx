@@ -1,5 +1,7 @@
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
+import ClubActivity from "./ClubActivity";
+import AboutKGEC from "./AboutKGEC";
 
 const AboutSection = forwardRef((props, ref) => {
   return (
@@ -13,7 +15,7 @@ const AboutSection = forwardRef((props, ref) => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="heading-custom"
         >
           About Us
@@ -22,7 +24,7 @@ const AboutSection = forwardRef((props, ref) => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="pt-4 sm:text-2xl font-semibold text-lg font-sans text-black w-full text-center"
         >
           In the early months of 2020, a group of enterprising students
@@ -42,6 +44,8 @@ const AboutSection = forwardRef((props, ref) => {
           practical engineering skills through hands-on projects.
         </motion.p>
       </div>
+      <AboutKGEC/>
+      <ClubActivity/>
     </section>
   );
 });

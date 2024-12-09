@@ -17,7 +17,7 @@ const MemberCard = ({ member }) => (
     <img
       src={member.imgSrc}
       alt={member.name}
-      className="w-fu h-full object-cover rounded transition-transform duration-300 "
+      className="w-full h-full rounded object-cover transition-transform duration-300 "
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
       <div className="flex space-x-4">

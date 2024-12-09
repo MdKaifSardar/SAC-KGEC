@@ -43,24 +43,34 @@ const HeroBanner = forwardRef((props, ref) => {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative flex flex-col justify-center items-center h-full text-white text-center px-4">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
-        >
-          Welcome to SAC-KGEC
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-xl md:text-2xl max-w-3xl"
-        >
-          Students&apos; Automobile Club of Kalyani Government Engineering
-          College
-        </motion.p>
+      <div className="relative flex flex-col justify-start items-center h-full text-white text-center px-4 pt-32">
+        <div className="flex flex-col items-center gap-8">
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold"
+          >
+            WELCOME TO SAC-KGEC
+          </motion.h1>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-full max-w-[600px] h-0.5 bg-white" 
+          />
+
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-2xl md:text-3xl max-w-4xl"
+          >
+            Students&apos; Automobile Club of Kalyani Government Engineering
+            College
+          </motion.p>
+        </div>
       </div>
 
       {/* Navigation dots */}

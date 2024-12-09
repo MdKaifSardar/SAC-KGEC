@@ -15,7 +15,7 @@
   @apply sm:text-2xl font-semibold font-sans pl-10 pr-10 pt-3 text-center text-xl text-black;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -75,12 +75,12 @@ body::-webkit-scrollbar{
   animation: slideClose 0.2s ease-out forwards;
 }
 
-.navMenu-open button{
+.navMenu-open button {
   width: 100%;
   text-align: center;
 }
 
-.navMenu-open button:hover{
+.navMenu-open button:hover {
   background-color: #e87b59;
   color: white;
 }
