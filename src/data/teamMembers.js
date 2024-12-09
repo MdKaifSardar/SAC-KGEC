@@ -1,7 +1,7 @@
 // Import member images
 import aritrenduPramanik from "../assets/members/Aritrendu Pramanik.jpg";
 import koushikKarmakar from "../assets/members/Koushik Karmakar.png";
-import sayanGhosh from "../assets/members/Sayan Ghosh.png";
+import sayanGhosh from "../assets/members/SAYAN GHOSH.png";
 import aahirMaji from "../assets/members/Aahir Maji.jpg";
 import udiptaMaiti from "../assets/members/Udipta Maiti.jpeg";
 import subhankarDhali from "../assets/members/Suvhankar dhali.jpg";
