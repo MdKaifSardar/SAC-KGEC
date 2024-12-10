@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Team = forwardRef((props, ref) => {
   const navigate = useNavigate();
   return (
-    <section ref={ref} id="convenors" className="py-10 flex flex-col justify-center items-center w-full">
+    <section ref={ref} id="convenors" className="py-10 flex flex-col justify-center items-center w-full mb-4">
       <div className="flex flex-col justify-center items-center pt-10">
         <h2 className="heading-custom">Our Team</h2>
         <p className="main-text">
