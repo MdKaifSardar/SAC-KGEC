@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
-import { convenors } from "../data/team";
-import ConvenorCard from "./ConvenorCard";
+import { useNavigate } from "react-router-dom";
 
 const Team = forwardRef((props, ref) => {
+  const navigate = useNavigate();
   return (
     <section ref={ref} id="convenors" className="py-10 flex flex-col justify-center items-center w-full">
       <div className="flex flex-col justify-center items-center pt-10">
@@ -23,7 +23,7 @@ const Team = forwardRef((props, ref) => {
         Meet our dedicated team of faculty advisors, convenors, coordinators and domain leads who work tirelessly to drive innovation and excellence at SAC-KGEC.
       </p>
       <button
-        onClick={() => window.location.href = '/team'} 
+        onClick={() => navigate("/team")}
         className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
       >
         Meet Our Team

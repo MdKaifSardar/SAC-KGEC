@@ -1,11 +1,12 @@
 import { forwardRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import bg0 from "../assets/background/bg0.jpg";
-import bg2 from "../assets/background/bg.jpg";
+import bg from "../assets/background/bg.jpg"
+import bg2 from "../assets/background/bg2.jpg";
 import bg4 from "../assets/fkdc/bg4.jpeg";
 import bg5 from "../assets/fkdc/bg5.jpeg";
 
-const images = [bg0, bg2,bg4,bg5];
+const images = [bg0,bg, bg2,bg4,bg5];
 
 const HeroBanner = forwardRef((props, ref) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -68,7 +69,7 @@ const HeroBanner = forwardRef((props, ref) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl md:text-3xl max-w-4xl"
           >
-            Students&apos; Automobile Club of Kalyani Government Engineering
+            Students&apos; Automobile Club <br />of <br /> Kalyani Government Engineering
             College
           </motion.p>
         </div>

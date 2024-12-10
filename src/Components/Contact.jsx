@@ -62,8 +62,9 @@ const Contact = forwardRef((props, ref) => {
             </div>
             <h3 className="text-xl font-bold mb-2">Address</h3>
             <p className="text-gray-600">
-              Kalyani Government Engineering College
+              Kalyani Government Engineering College,
             </p>
+            <p className="text-gray-600">JCB Building (Dept. Electrical Engineering),</p>
             <p className="text-gray-600">Kalyani, Nadia</p>
             <p className="text-gray-600">West Bengal - 741235</p>
           </motion.div>
@@ -135,7 +136,7 @@ const Contact = forwardRef((props, ref) => {
           <div className="order-2 md:order-2">
             <div className="rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[500px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8219102555387!2d88.44869811496831!3d22.99133988497286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8952d71094a7f%3A0x8f1c6d3ff467d96b!2sKalyani%20Government%20Engineering%20College!5e0!3m2!1sen!2sin!4v1648203164036!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=SAC+KGEC,+22.992593545127082,88.4487911059281&hl=es;z=14&t=m&amp;output=embed&amp;iwloc=A"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
