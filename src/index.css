@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
   background-color: rgba(73, 73, 73, 1);
   right: 0rem;
   opacity: 0;
-  display: flex;
+  display: hidden;
   transform-origin: right;
   flex-direction: column;
   justify-content: center;

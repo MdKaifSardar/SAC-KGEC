@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
-    <div className="z-10 flex flex-col justify-center items-center w-fit h-full gap-4 fixed right-2">
+    <div className="z-10 flex flex-col justify-center items-center w-fit h-full gap-4 fixed bottom-4 right-2 sm:right-2 sm:bottom-auto">
       <a
         href="https://www.instagram.com/sac_kgec?igsh=MWJzN3dnMm1iNDFjMQ=="
         target="_blank"
