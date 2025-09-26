@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
 import teamBanner from "../assets/background/bg.jpeg"; // Add your banner image
-import { faculty, convenors, coordinators, domainLeads} from "../data/teamMembers";
+import { faculty, convenors, coordinators, domainLeads, fourthYear, thirdYear} from "../data/teamMembers";
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Navbar from "../Components/Navbar";
@@ -152,8 +152,8 @@ const TeamPage = () => {
         <TeamSection title="Convenors" members={convenors} />
         <TeamSection title="Coordinators" members={coordinators} />
         <TeamSection title="Domain Leads" members={domainLeads}  />
-        {/* <TeamSection title="Fourth Year Members" members={fourthYear} isDropdown={true} />
-        <TeamSection title="Third Year Members" members={thirdYear} isDropdown={true} /> */}
+        <TeamSection title="Fourth Year Members" members={fourthYear} isDropdown={true} />
+        <TeamSection title="Third Year Members" members={thirdYear} isDropdown={true} />
       </div>
 
       <Footer />

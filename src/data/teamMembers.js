@@ -17,18 +17,13 @@ import subhajitPal from "../assets/members/Subhajit Pal.png";
 import imanNaskar from "../assets/members/Iman Naskar.jpg";
 import arindamKarmakar from "../assets/members/Arindam Karmakar.jpg";
 import gopiMallick from "../assets/team/convenors/Gopi Mallik.png";
-import rahulPramanik from "../assets/members/RAHUL PRAMANIK.png";
-import moumitaPandit from "../assets/members/Moumita Pandit.jpg";
-import koushikNath from "../assets/members/Koushik Nath.jpg";
 import souravKumarDey from "../assets/team/convenors/Sourav Kumar Dey.png";
-import rushtamChakraborty from "../assets/members/Rushtam Chakraborty.jpg";
-import souvanDas from "../assets/members/SUSHOVAN DAS.jpeg";
 import subhadeepDas from "../assets/team/convenors/Subhadeep Das.png";
 import soumyadeepNaskar from "../assets/members/soumyadeep naskar.jpg";
 import debasisSir from "../assets/Debasis sir.jpg";
 import santanuDasSir from "../assets/Santanu sir.jpg";
 import debasisCSir from "../assets/chakrabartee sir.jpg";
-// Import other member images...
+import athar from "../assets/members/AtharAli.jpg";
 
 export const faculty = [
   {
@@ -156,64 +151,6 @@ export const domainLeads = [
 
 export const fourthYear = [
   {
-    name: "Sayandeep De",
-    position: "Member",
-    imgSrc: soumyadeepDe,
-    linkedin: "https://www.linkedin.com/in/soumyadip-de-1601a5254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    name: "Koushik Nath",
-    position: "Member",
-    imgSrc: koushikNath,
-    linkedin: "https://www.linkedin.com/in/koushik-nath",
-  },
-  {
-    name: "Arindam Karmakar",
-    position: "Member",
-    imgSrc: arindamKarmakar,
-    linkedin: "https://www.linkedin.com/in/arindam-karmakar-ee",
-  },
-  {
-    name: "Gopi Mallick",
-    position: "Member",
-    imgSrc: gopiMallick,
-    linkedin: "https://www.linkedin.com/in/gopi-mallick-0a7b5b25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    name: "Rahul Pramanik",
-    position: "Member",
-    imgSrc: rahulPramanik,
-    linkedin: "https://www.linkedin.com/in/pramanikrahul2001?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    name: "Moumita Pandit",
-    position: "Member",
-    imgSrc: moumitaPandit,
-    linkedin: "https://www.linkedin.com/in/moumita-pandit-130383225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    name: "Sourav Kumar Dey",
-    position: "Member",
-    imgSrc: souravKumarDey,
-    linkedin: "https://www.linkedin.com/in/sourav-kumar-dey-me",
-  },
-  {
-    name: "Rushtam Chakraborty",
-    position: "Member",
-    imgSrc: rushtamChakraborty,
-    linkedin: "https://www.linkedin.com/in/rushtam-chakraborty-105158218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    name: "Souvan Das",
-    position: "Member",
-    imgSrc: souvanDas,
-    linkedin: "http://linkedin.com/in/sushovan-das-me",
-  },
-  // Add more convenors...
-];
-
-export const thirdYear = [
-  {
     name: "Aritrendu Pramanik",
     position: "Member",
     imgSrc: aritrenduPramanik,
@@ -303,7 +240,15 @@ export const thirdYear = [
     imgSrc: imanNaskar,
     linkedin: "https://www.linkedin.com/in/iman-naskar-846101258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
-  // Add more convenors...
+];
+
+export const thirdYear = [
+  {
+    name: "Iman Naskar",
+    position: "Member",
+    imgSrc: athar,
+    linkedin: "https://www.linkedin.com/in/iman-naskar-846101258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
 ];
 
 // Add similar arrays for coordinators, domainLeads, fourthYear, and thirdYear
